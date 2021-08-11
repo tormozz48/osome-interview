@@ -1,0 +1,25 @@
+{
+  "name": "osome-interview",
+  "version": "1.0.0",
+  "description": "Osome interview project",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tormozz48/osome-interview.git"
+  },
+  "keywords": [
+    "osome",
+    "interview",
+    "test",
+    "project"
+  ],
+  "author": "andrey.kuznetsov48@yandex.ru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tormozz48/osome-interview/issues"
+  },
+  "homepage": "https://github.com/tormozz48/osome-interview#readme"
+}

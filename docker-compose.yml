@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  app:
+    container_name: osome-interview
+    command: sh -c "npm run start:prod"
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    env_file:
+      - .dev.env
+    networks:
+      - osome-interview
+
+networks:
+  osome-interview:
+    external: true
