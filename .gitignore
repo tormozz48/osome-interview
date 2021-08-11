@@ -6,6 +6,7 @@ logs
 *.log
 npm-debug.log*
 
+dist
 coverage
 node_modules/
 
@@ -19,4 +20,4 @@ node_modules/
 
 # dotenv environment variables file
 .env
-.env.test
+.dev.env

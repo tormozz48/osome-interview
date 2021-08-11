@@ -11,9 +11,22 @@ services:
       - "3000:3000"
     env_file:
       - .dev.env
+    depends_on:
+      - postgres
     networks:
-      - osome-interview
+      - osome-network
+
+  postgres:
+    container_name: osome-postgres
+    image: postgres:13-alpine
+    restart: always
+    ports:
+      - "5432:5432"
+    env_file:
+      - .dev.env
+    networks:
+      - osome-network
 
 networks:
-  osome-interview:
+  osome-network:
     external: true
